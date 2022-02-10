@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 /**
  * Clase que pide y multiplica dos números enteros.
- * 
+ *
  * @author evaren
  */
 public class Multiplica {
 
     /**
-     *Método que multiplica dos números introducidos por teclado.
-     * 
+     * Método que multiplica dos números introducidos por teclado.
+     *
      * @param num1 Número introducido por el usuario.
      * @param num2 Número introducido por el usuario.
      * @return Devuelve el resultado de multiplicar los 2 números introducidos
@@ -25,6 +25,7 @@ public class Multiplica {
 
     /**
      * Método principal.
+     *
      * @param args Parámetros de entrada de linea de comandos.
      */
     public static void main(String[] args) {
@@ -38,5 +39,4 @@ public class Multiplica {
 
         System.out.println("Resultado: " + multiplica(a, b));
     }
-
 }
