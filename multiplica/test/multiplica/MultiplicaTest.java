@@ -51,6 +51,18 @@ public class MultiplicaTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+    
+    /**
+     * Test of multiplica method, of class Multiplica with timeout.
+     */
+    @Test(timeout=1)
+    public void testMultiplicaTimeout() {
+        System.out.println("multiplica");
+        int num1 = 35000;
+        int num2 = 35000;
+        int result = Multiplica.multiplica(num1, num2);
+     
+    }
 
     /**
      * Test of main method, of class Multiplica.
