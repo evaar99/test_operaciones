@@ -23,6 +23,15 @@ public class Multiplica {
 
     }
 
+    public static int factorial(int num) {
+        int factorial = num;
+        for (int i = 1; i <= num; i++) {
+            factorial = i * num;
+        }
+        return factorial;
+
+    }
+
     /**
      * Método principal.
      *
@@ -38,5 +47,7 @@ public class Multiplica {
         b = leer.nextInt();
 
         System.out.println("Resultado: " + multiplica(a, b));
+        System.out.println("Resultado factorial número 1: " + factorial (a) + 
+        "\nResultado facorial número 2: " + factorial(b));
     }
 }
