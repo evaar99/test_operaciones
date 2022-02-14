@@ -23,6 +23,12 @@ public class Multiplica {
 
     }
 
+    /**
+     * Método que calcula el factorial del número introducido.
+     *
+     * @param num Número introducido por el usuario.
+     * @return Devuelve el valor del factorial.
+     */
     public static int factorial(int num) {
         int factorial = num;
         for (int i = 1; i <= num; i++) {
@@ -47,7 +53,7 @@ public class Multiplica {
         b = leer.nextInt();
 
         System.out.println("Resultado: " + multiplica(a, b));
-        System.out.println("Resultado factorial número 1: " + factorial (a) + 
-        "\nResultado facorial número 2: " + factorial(b));
+        System.out.println("Resultado factorial número 1: " + factorial(a)
+                + "\nResultado facorial número 2: " + factorial(b));
     }
 }
