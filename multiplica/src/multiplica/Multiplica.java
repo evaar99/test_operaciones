@@ -30,11 +30,17 @@ public class Multiplica {
      * @return Devuelve el valor del factorial.
      */
     public static int factorial(int num) {
-        int factorial = num;
-        for (int i = 1; i <= num; i++) {
-            factorial = i * num;
+        int nfactorial = num;
+        if (num < 0) {
+            throw new IllegalArgumentException("¡Factorial negativo!");
         }
-        return factorial;
+
+        if (num > 0) {
+            for (int i = 1; i < num; i++) {
+                nfactorial = i * num;
+            }
+        }
+        return nfactorial;
 
     }
 

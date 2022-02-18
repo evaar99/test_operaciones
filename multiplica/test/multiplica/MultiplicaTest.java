@@ -74,7 +74,7 @@ public class MultiplicaTest {
         String[] args = null;
         Multiplica.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -83,12 +83,23 @@ public class MultiplicaTest {
     @Test
     public void testFactorial() {
         System.out.println("factorial");
-        int num = 0;
-        int expResult = 0;
+        int num =3;
+        int expResult = 6;
         int result = Multiplica.factorial(num);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test (expected = IllegalArgumentException.class)
+    public void testFactorialException() {
+        System.out.println("factorial");
+        int num =3;
+        int expResult = 6;
+        int result = Multiplica.factorial(num);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
     }
     
 }
